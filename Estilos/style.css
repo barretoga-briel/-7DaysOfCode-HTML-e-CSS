@@ -9,6 +9,7 @@
     --cor-logo-marca: #3a404e;
     --cor-fundo-vagas: rgba(142, 36, 36, 0.05);
     --cor-borda: #eaecf0;
+    --fundo-rodape: #f9fafb;
 }
 
 * {
@@ -118,10 +119,15 @@ body {
 }
 
 .subtitulo {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 600;
     color: var(--cortextoprincipal);
-    max-width: 80%;
+    max-width: 90%;
+    text-align: center;
+}
+
+#destaque {
+    font-size: 48px;
 }
 
 .texto-auxiliar {
@@ -231,4 +237,34 @@ body {
     color: var(--cortextoauxiliar);
     text-align: center;
     padding-top: 0.5rem;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fundo-rodape);
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    margin: 6rem 7rem;
+}
+
+.campo-entrada {
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    width: 360px;
+    height: 48px;
+}
+
+.botao-envio {
+    width: 116px;
+    height: 48px;
+    background-color: var(--corbotao);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    color: var(--corfundo);
+}
+
+#direitos {
+    font-size: 1rem;
 }
