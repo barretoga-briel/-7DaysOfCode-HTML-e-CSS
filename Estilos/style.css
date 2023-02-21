@@ -7,6 +7,8 @@
     --cortextoauxiliar: #667085;
     --fonteprincipal: "Inter", sans-serif;
     --cor-logo-marca: #3a404e;
+    --cor-fundo-vagas: rgba(142, 36, 36, 0.05);
+    --cor-borda: #eaecf0;
 }
 
 * {
@@ -109,24 +111,24 @@ body {
     gap: 2rem;
 }
 
-.sobre-nos span {
-    font-size: 16px;
+.titulo-menor {
+    font-size: 1rem;
     font-weight: 600;
     color: var(--corbotao);
 }
 
-.sobre-nos h1 {
+.subtitulo {
     font-size: 48px;
     font-weight: 600;
     color: var(--cortextoprincipal);
+    max-width: 80%;
 }
 
-.sobre-nos p {
-    font-size: 20px;
+.texto-auxiliar {
+    font-size: 1.25rem;
     color: var(--cortextoauxiliar);
     font-weight: 400;
-    text-align: center;
-    max-width: 40%;
+    max-width: 60%;
 }
 
 .metricas {
@@ -139,16 +141,94 @@ body {
 }
 
 .metricas h2 {
-    font-size: 60px;
+    font-size: 3.75rem;
     color: var(--corbotao);
 }
 
 .metricas span {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--cortextoprincipal);
 }
 
 .metricas p {
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--cortextoauxiliar);
+}
+
+.procura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+#vagas {
+    background-color: var(--cor-fundo-vagas);
+    border-radius: 2rem;
+    margin-top: 5em;
+    padding: 1rem;
+}
+
+.imagem-equipe {
+    margin: 4rem 7rem;
+    max-width: 90%;
+    align-items: center;
+}
+
+.vagas {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 0rem 12rem;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.vagas h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.vagas__descricao {
+    border-radius: 1rem;
+    border: 1px solid var(--cor-borda);
+    padding: 1.5rem;
+}
+
+.vagas__descricao h4 {
+    font-size: 1.1rem;
+}
+
+.vagas__descricao span {
+    font-size: 1.1rem;
+    color: var(--cortextoauxiliar);
+}
+
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    gap: 2rem;
+    align-items: center;
+    background-color: var(--cor-fundo-vagas);
+    margin: 6rem 7rem;
+}
+
+.imagem-julia {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+#nome {
+    size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+#cargo {
+    font-size: 0.87rem;
+    color: var(--cortextoauxiliar);
+    text-align: center;
+    padding-top: 0.5rem;
 }
